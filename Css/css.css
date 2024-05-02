@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    }
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.25rem;
+    height: calc(100vh - 1px);
+}
+
+    /* .bg-image{
+        background: url(/images/pattern-background-mobile.svg) no-repeat center/cover;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    @media (min-width: 768px){
+        .bg-image{
+            background: url(/images/pattern-background-desktop.svg) no-repeat center/cover;
+            height: 500px;
+        }
+    } */
+
+
+.background{
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0, 0, 15px rgba(0, 0, 0, .1);
+}
+
+
+.container .main-image img{
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container h1{
+    text-align: center;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.container .p-1{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+}
+
+.container .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 17px;
+    background-color: var(--Very-pale-blue);
+    margin-left: 20px;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .price .music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .price .music .annual{
+    margin-left: 15px;
+}
+
+.container .price .music .annual .p-2{
+        font-weight: 700;
+        color: var(--Dark-blue);
+}
+
+.container .price .music .annual .p-3{
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.container .price a{
+    color: var(--Bright-blue);
+}
+.container .price a:hover{
+    text-decoration: none;
+    opacity: .7;
+    transition: ease-in-out .2s;
+}
+
+.container .btn{
+    display: Block;
+    /* Because the <button> is an inline element */
+    margin-left: auto;
+    margin-right: auto;
+    /* fbtaly m2dr4 agebo fy elnos 8er b margin left w right */
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 12px 80px;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    box-shadow: 0, 0, 30px rgba(0, 0, 0, 1.5rem);
+}
+.container .btn:hover{
+    /* i need somehelp if someone can tell me how to make the box-shadow */
+    opacity: .7;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.container .p-4{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.container .p-4:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    transition: ease-in-out .2s;
+    /* this for the user 34an mytl8bat4 lma yegy gamb zorar el cancel */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 375px){
+    .container{
+        width: 350px;
+    }
+}
